@@ -6,7 +6,7 @@ var path = require('path');
 var EventEmitter = require('events').EventEmitter;
 var should = require('chai').should();
 var crypto = require('crypto');
-var bitcore = require('bitcore-lib');
+var bitcore = require('gltcore-lib');
 var _ = bitcore.deps._;
 var sinon = require('sinon');
 var proxyquire = require('proxyquire');
@@ -407,7 +407,7 @@ describe('Bitcoin Service', function() {
       var config = {
         node: {
           network: bitcore.Networks.testnet,
-          configPath: '/tmp/.bitcore/bitcore-node.json'
+          configPath: '/tmp/.gltcore/gltcore-node.json'
         },
         spawn: {
           datadir: './data',
@@ -418,7 +418,7 @@ describe('Bitcoin Service', function() {
       bitcoind.options.spawn.datadir = './data';
       var node = {};
       bitcoind._loadSpawnConfiguration(node);
-      bitcoind.options.spawn.datadir.should.equal('/tmp/.bitcore/data');
+      bitcoind.options.spawn.datadir.should.equal('/tmp/.gltcore/data');
     });
     it('should throw an exception if txindex isn\'t enabled in the configuration', function() {
       var TestBitcoin = proxyquire('../../lib/services/bitcoind', {
