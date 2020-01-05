@@ -28,7 +28,7 @@ Bitcore includes a Command Line Interface (CLI) for managing, configuring and in
 galilel-node create -d <bitcoin-data-dir> mynode
 cd mynode
 galilel-node install <service>
-galilel-node install https://github.com/yourname/helloworld
+galilel-node install https://github.com/yourname/helloworld 
 ```
 
 This will create a directory with configuration files for your node and install the necessary dependencies. For more information about (and developing) services, please see the [Service Documentation](docs/services.md).
