@@ -25,10 +25,10 @@ Note: For your convenience, we distribute bitcoind binaries for x86_64 Linux and
 Bitcore includes a Command Line Interface (CLI) for managing, configuring and interfacing with your Bitcore Node.
 
 ```bash
-gltcore-node create -d <bitcoin-data-dir> mynode
+galilel-node create -d <bitcoin-data-dir> mynode
 cd mynode
-gltcore-node install <service>
-gltcore-node install https://github.com/yourname/helloworld
+galilel-node install <service>
+galilel-node install https://github.com/yourname/helloworld
 ```
 
 This will create a directory with configuration files for your node and install the necessary dependencies. For more information about (and developing) services, please see the [Service Documentation](docs/services.md).
