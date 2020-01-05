@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-var gltcore = require('../lib/cli/bitcore');
-gltcore();
+var galilelcore = require('../lib/cli/bitcore');
+galilelcore();
