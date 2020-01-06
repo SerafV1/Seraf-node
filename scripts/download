@@ -5,9 +5,8 @@ set -e
 root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
-version="0.12.1"
-url="https://github.com/Galilel-Project/galilel/releases/download/v${version}"
-tag="v0.12.1-bitcore-4"
+version="3.4.0"
+url="https://github.com/Galilel-Project/galilel/releases/download/v${version}/"
 
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
