@@ -24,4 +24,4 @@ module.exports.cli.daemon = require('./lib/cli/daemon');
 module.exports.cli.bitcore = require('./lib/cli/bitcore');
 module.exports.cli.bitcored = require('./lib/cli/bitcored');
 
-module.exports.lib = require('gltcore-lib');
+module.exports.lib = require('galilelcore-lib');
